@@ -10,6 +10,18 @@ public class Fabricante {
     private Integer codigo;
     private String nome;
     
+    /**
+     * padrão EJB
+     */
+    public Fabricante() {
+        
+    }
+    
+    public Fabricante(Integer codigo, String nome) {
+        this.codigo = codigo;
+        this.nome = nome;
+    }
+    
     public Integer getCodigo() {
         return codigo;
     }

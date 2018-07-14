@@ -12,6 +12,20 @@ public class Produto {
     private double valor;
     private Fabricante fabricante;
     
+    /**
+     * padrão EJB
+     */
+    public Produto() {
+        
+    }
+    
+    public Produto(Integer codigo, String nome, double valor, Fabricante fabricante) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.valor = valor;
+        this.fabricante = fabricante;
+    }
+    
     public Integer getCodigo() {
         return codigo;
     }
